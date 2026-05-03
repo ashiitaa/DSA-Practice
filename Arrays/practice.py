@@ -58,6 +58,34 @@ def largest_even_no(arr):
         
 arr = [3,6,2,1,4]
 print ('the largest number is:', largest_even_no(arr))
+#FIND SUM OF EVEN NUMBERS
+def find_even_sum(arr):
+    total = 0 
+    for num in arr :
+        if num % 2 == 0 :
+            total = total + num 
 
+    return total 
+arr= [2,7,4,9,4]
+print ('the sum of even number is :', find_even_sum(arr))
+# FIND MISSING NUMBER BETWEEN 1-5
+def find_missing_no(arr):
+    total = 0 
+    for num in arr :
+        total = total + num 
+    missing = 15 - total
+    return missing
+    
+arr = [1,2,3,4]
+print ('the missing number is:', find_missing_no(arr))
+# FIND AVERAGE
+def find_avg(arr):
+    total = 0
+    for num in arr:
+        total = total + num 
+        avg = total/len(arr)
+    return avg 
+arr = [2,1,3,6]
+print ('the avg is:', find_avg(arr))
 
 
