@@ -14,3 +14,12 @@ def find_diff(arr):
     return diff
 arr = [2,4,5,6,8,1]
 print('the diff between the max and min number is:', find_diff(arr))
+# COUNT THE NUMBERS GREATER THAN 5
+def find_count(arr):
+    count = 0 
+    for num in arr:
+        if num > 5 :
+            count = count + 1 
+    return count 
+arr=[1,2,4,7,9]
+print ('numbers in array greater than 5 are :', find_count(arr))
