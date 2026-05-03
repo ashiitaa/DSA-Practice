@@ -34,3 +34,30 @@ def count_positive(arr):
 arr = [2,-6,-3,4,-9]
 
 print('total positive numbers are:', count_positive(arr))
+# SMALLEST ODD NUMBER
+def find_smallest_odd(arr):
+    odd = float('inf')
+
+    for num in arr:
+        if num % 2 == 1 and num < odd :
+            odd = num 
+
+    return odd
+ 
+arr = [2,3,5,9,4]
+
+print ('the smallest odd number is:', find_smallest_odd(arr))
+# largest even number
+def largest_even_no(arr):
+    largest = float('-inf')
+    
+    for num in arr:
+        if num > largest and num % 2 == 0 :
+            largest = num 
+            return num 
+        
+arr = [3,6,2,1,4]
+print ('the largest number is:', largest_even_no(arr))
+
+
+
